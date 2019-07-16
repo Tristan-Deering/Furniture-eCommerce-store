@@ -50,6 +50,30 @@ body {
 .banner {
   height: 100%;
   background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;  
+}
+
+.banner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;   
+  border-width: 0 0.5px 0 0;
+  border-style: solid;
+  border-color: #b3b3b3c4;
+  cursor: pointer;
+}
+
+.banner-box:last-child {
+  border-width: 0;
+}
+
+.banner-box img {
+  opacity: 0.8;
 }
 
 /* Typography */
@@ -59,10 +83,16 @@ body {
   font-weight: 300;
 }
 
+.label {
+  font-size: 18px;
+  font-weight: 300;
+  color: #d09b65;
+}
+
 /* Content */
 
 .hero-nav {
-  padding: 0 70px;
+  padding: 40px 70px;
 }
 
 .hero-content {
@@ -82,14 +112,6 @@ body {
   margin-top: 40px; 
   display: flex;
   justify-content: space-between;
-}
-
-.right-col {
-  /* padding-top: 250px; */
-}
-
-.left-col {
-  padding-top: 20px;
 }
 
 .cta-button {
@@ -113,7 +135,7 @@ body {
 
 .negative-margin {
   margin-left: -40px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 /* Navigation */
