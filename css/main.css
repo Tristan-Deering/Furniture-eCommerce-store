@@ -10,7 +10,6 @@ body {
 #hero-section {
   width: 100%;
   height: 100vh;
-  /* padding-top: 35px; */
   background-color: #f4f5f7;
 }
 
@@ -18,8 +17,12 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 80px;
   background-color: #faf8f2
+}
+
+.content-section.extra-padding {
+  padding-top: 150px
 }
 
 .content-wrapper {
@@ -36,6 +39,13 @@ body {
   justify-content: center;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .top-margin {
   margin-top: 40px;
 }
@@ -47,46 +57,44 @@ body {
   width: 100%;
 }
 
-.banner {
-  height: 100%;
-  background-color: white;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;  
+.center-box {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.banner-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  text-align: center;   
-  border-width: 0 0.5px 0 0;
-  border-style: solid;
-  border-color: #b3b3b3c4;
-  cursor: pointer;
-}
-
-.banner-box:last-child {
-  border-width: 0;
-}
-
-.banner-box img {
-  opacity: 0.8;
-}
 
 /* Typography */
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 
 .h2-light {
   font-size: 26px;
   font-weight: 300;
 }
 
+.established {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b3b3b3;
+  padding-bottom: 2px;
+}
+
 .label {
   font-size: 18px;
   font-weight: 300;
   color: #d09b65;
+}
+
+.flex-center .fur {
+  margin-left: 25px;
+}
+
+.flex-center .nit {
+  margin-right: 25px;
 }
 
 /* Content */
@@ -138,22 +146,57 @@ body {
   margin-top: 100px;
 }
 
+.banner {
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;  
+}
+
+.banner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;   
+  border-width: 0 0.5px 0 0;
+  border-style: solid;
+  border-color: #b3b3b3c4;
+  cursor: pointer;
+}
+
+.banner-box:last-child {
+  border-width: 0;
+}
+
+.banner-box img {
+  opacity: 0.8;
+}
+
+.gary {
+  margin-top: 15px;
+  opacity: 0.6;
+  transform: rotate(-10deg);
+}
+
 /* Navigation */
 
 .fur {
   float: left;
   color: #d09b65;
   font-size: 28px;
-  line-height: 40px;
   font-weight: 600;
+  margin: 0;
 }
 
 .nit {
   float: left;
   color: #d09b65;
   font-size: 28px;
-  line-height: 40px;
   font-weight: 300;
+  margin: 0;
 }
 
 .search-bar {
