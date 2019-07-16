@@ -64,6 +64,27 @@ body {
   text-align: center;
 }
 
+.products-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 30px;
+}
+
+.product-grid-item {
+  min-height: 200px;
+  background-color: #c4c4c4;
+  margin: 10px;
+}
+
+.deals-section {
+  width: 100%;
+  margin: 0 auto;
+  height: 220px;
+  background-image: url(../images/deals.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Typography */
 
@@ -215,7 +236,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .inline-text.inner-search {
   border: none;
   padding: 0 3px;
-  background-image: url('search.png');
+  background-image: url('../images/search.png');
   background-position: left; 
   background-repeat: no-repeat;
 }
