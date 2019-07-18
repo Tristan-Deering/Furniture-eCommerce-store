@@ -5,6 +5,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  background-color: #faf8f2;
 }
 
 #hero-section {
@@ -18,7 +19,7 @@ body {
   justify-content: center;
   width: 100%;
   padding-top: 80px;
-  background-color: #faf8f2
+  background-color: #fffefb
 }
 
 .content-section.extra-padding {
@@ -28,7 +29,19 @@ body {
 .content-wrapper {
   width: 100%;
   max-width: 1030px;
+  margin: 0 auto;
   color: #c4c4c4; 
+}
+
+footer {
+  padding-top: 70px;
+}
+
+.upper-footer {
+  width: 100%;
+  -webkit-column-count: 4; /* Old Chrome, Safari and Opera */
+  -moz-column-count: 4; /* Old Firefox */
+  column-count: 4;
 }
 
 .flex {
@@ -46,13 +59,21 @@ body {
   text-align: center;
 }
 
+.flex-center-vert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
 .top-margin {
   margin-top: 40px;
 }
 
 #banner-section { 
-  height: 200px;
-  margin-top: -100px;
+  height: 160px;
+  margin-top: -80px;
   position: absolute;
   width: 100%;
 }
@@ -118,6 +139,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-right: 25px;
 }
 
+.review {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
 /* Content */
 
 .hero-nav {
@@ -172,6 +199,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: white;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;  
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.048), 1px 0px 20px rgba(0, 0, 0, 0.048);
 }
 
 .banner-box {
@@ -200,6 +228,29 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
   opacity: 0.6;
   transform: rotate(-10deg);
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  background-image: url(../images/profile.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-color: #575756;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.dot.current {
+  background-color: black;
 }
 
 /* Navigation */
